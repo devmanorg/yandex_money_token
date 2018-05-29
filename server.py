@@ -4,7 +4,7 @@ import os
 app = Flask(__name__)
 
 YMONEY_APP_ID = os.getenv('YMONEY_APP_ID', '')
-YMONEY_PERMISSIONS = os.getenv('YMONEY_PERMISSIONS', 'account-info operation-history')
+YMONEY_PERMISSIONS = os.getenv('YMONEY_PERMISSIONS', 'account-info operation-details operation-history')
 
 @app.route("/")
 def start():
